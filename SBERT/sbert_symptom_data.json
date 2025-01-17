@@ -1,0 +1,590 @@
+[
+  {
+    "sentence": "A 65-year-old woman has been experiencing bone pain during rest for the past two weeks.",
+    "symptom": "bone pain"
+  },
+  {
+    "sentence": "A 35-year-old patient presented with sharp pain and tenderness in the lower back, following a blunt force trauma during a fall.",
+    "symptom": "injury"
+  },
+  {
+    "sentence": "A 45-year-old woman experienced fainting episodes for the past week, causing concern among her family.",
+    "symptom": "fainting"
+  },
+  {
+    "sentence": "A 65-year-old woman has been experiencing poor appetite for the past two weeks, leading to weight loss and fatigue.",
+    "symptom": "loss of appetite"
+  },
+  {
+    "sentence": "A 35-year-old woman experienced mild dehydration after spending a long day in the sun without drinking enough water.",
+    "symptom": "dehydration"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent bloating and discomfort in her abdomen for the past two weeks.",
+    "symptom": "bloating"
+  },
+  {
+    "sentence": "A 60-year-old woman has been experiencing fatigue, frequent headaches, and dizziness for the past month. During her last check-up, the doctor discovered that she has high blood pressure.",
+    "symptom": "high blood pressure"
+  },
+  {
+    "sentence": "The 35-year-old woman reported experiencing a persistent sensation of skin burning on her arms and legs for the past week.",
+    "symptom": "skin burning"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent hip pain for the past two weeks.",
+    "symptom": "hip pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing watery eyes, sneezing, and itching after coming into contact with pollen, indicating she may have an allergy.",
+    "symptom": "allergy"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing piercing bone pain in her lower back for the past two weeks.",
+    "symptom": "bone pain"
+  },
+  {
+    "sentence": "The 35-year-old woman complained of body shaking from cold, along with persistent chills for the past three days.",
+    "symptom": "chills"
+  },
+  {
+    "sentence": "A 7-year-old child has been experiencing a clear runny nose for the past three days.",
+    "symptom": "runny nose"
+  },
+  {
+    "sentence": "The elderly patient, aged 75, has been experiencing dizziness and fatigue for the past week, which could be a result of low blood pressure.",
+    "symptom": "low blood pressure"
+  },
+  {
+    "sentence": "A 60-year-old woman experienced severe pain in her leg after a fall, and an X-ray confirmed a bone break.",
+    "symptom": "bone fracture"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing red, inflamed skin on her arms for the past week, accompanied by a burning sensation.",
+    "symptom": "skin burning"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing an exhausted state for the past few weeks, feeling drained and fatigued despite getting enough rest.",
+    "symptom": "weakness"
+  },
+  {
+    "sentence": "A 7-year-old child has developed a red, itchy rash on their arms and legs that has been persistent for the past week.",
+    "symptom": "rash"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent itching all over her body for the past week.",
+    "symptom": "itching"
+  },
+  {
+    "sentence": "A 40-year-old woman has been experiencing skin irritation on her arms for the past week.",
+    "symptom": "irritation"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing sudden chills and goosebumps for the past two days.",
+    "symptom": "chills"
+  },
+  {
+    "sentence": "A 65-year-old woman has been experiencing persistent bone pain as a result of osteoporosis for the past six months.",
+    "symptom": "bone pain"
+  },
+  {
+    "sentence": "A 30-year-old woman has been experiencing frequent sneezing for the past week.",
+    "symptom": "sneezing"
+  },
+  {
+    "sentence": "The 45-year-old man noticed persistent wound bleeding for the past week, which is causing him concern.",
+    "symptom": "bleeding"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent ear ringing for the past two weeks.",
+    "symptom": "ear ringing"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing persistent swelling in his ankles for the past two weeks.",
+    "symptom": "swelling"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing sharp back pain for the past two weeks, making it difficult for her to stand or sit for long periods.",
+    "symptom": "back pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing small uncontrollable shakes and feeling extremely cold, indicating she may have chills.",
+    "symptom": "chills"
+  },
+  {
+    "sentence": "The 45-year-old woman has been experiencing extreme exhaustion for the past two weeks, struggling to get through her daily activities.",
+    "symptom": "exhaustion"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent feelings of worry and fear, along with restlessness and difficulty concentrating, indicating symptoms of anxiety.",
+    "symptom": "anxiety"
+  },
+  {
+    "sentence": "The 45-year-old patient complained of feeling like their heart was skipping beats, accompanied by rapid breathing.",
+    "symptom": "rapid breathing"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent leg pain when standing for more than 10 minutes.",
+    "symptom": "leg pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a persistent headache for the past week.",
+    "symptom": "headache"
+  },
+  {
+    "sentence": "The 35-year-old patient has been experiencing sharp jaw pain on the right side for the past week, especially when chewing or opening their mouth wide.",
+    "symptom": "jaw pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing severe migraine headaches for the past week.",
+    "symptom": "migraine"
+  },
+  {
+    "sentence": "A 45-year-old woman noticed swelling in her ankles that has been persistent for the past week.",
+    "symptom": "swelling"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing sharp chest pain for the past week whenever he takes a deep breath.",
+    "symptom": "chest pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing swollen extremities for the past week, causing discomfort and difficulty walking.",
+    "symptom": "swelling"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent throat pain for the past week.",
+    "symptom": "throat pain"
+  },
+  {
+    "sentence": "The 35-year-old patient has been experiencing persistent leg pain for the past two weeks.",
+    "symptom": "leg pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing sharp ear pain in her right ear for the past three days.",
+    "symptom": "ear pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a persistent cough for the past two weeks.",
+    "symptom": "cough"
+  },
+  {
+    "sentence": "The 45-year-old patient has been experiencing sharp hip pain on the right side for the past two weeks, especially when walking or climbing stairs.",
+    "symptom": "hip pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing pins and needles in her hands for the past week.",
+    "symptom": "numbness"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing severe tooth pain on the left side of her mouth for the past week.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing unexplained weight loss and fatigue for the past few months, which could be indicative of cancer.",
+    "symptom": "cancer"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent hand pain for the past two weeks.",
+    "symptom": "hand pain"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing discomfort and bleeding during bowel movements for the past two weeks, which could be a symptom of piles.",
+    "symptom": "piles"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing severe eye pain in her left eye for the past week.",
+    "symptom": "eye pain"
+  },
+  {
+    "sentence": "A 45-year-old male has been experiencing persistent pain and discomfort while passing stools, which could indicate a case of piles.",
+    "symptom": "piles"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing extreme exhaustion for the past two weeks, struggling to find the energy to complete daily tasks.",
+    "symptom": "exhaustion"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent bone pain in her lower back for the past month.",
+    "symptom": "bone pain"
+  },
+  {
+    "sentence": "The 65-year-old patient has been experiencing lack of mental clarity for the past week, which is a concerning symptom that could be indicative of confusion.",
+    "symptom": "confusion"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing frequent bloating and discomfort after meals, indicating possible indigestion.",
+    "symptom": "indigestion"
+  },
+  {
+    "sentence": "The patient, a 45-year-old woman, has been experiencing unexplained weight loss for the past three months.",
+    "symptom": "weight loss"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a lack of ambition for the past few weeks, making it difficult for her to focus on her work.",
+    "symptom": "lack of motivation"
+  },
+  {
+    "sentence": "The 45-year-old man has been experiencing a persistent ear ringing for the past two weeks.",
+    "symptom": "ear ringing"
+  },
+  {
+    "sentence": "The 45-year-old woman has been experiencing unexplained weight loss over the past two months.",
+    "symptom": "weight loss"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing congestion with increased mucus production for the past week.",
+    "symptom": "congestion"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing a significant loss of appetite for the past two weeks.",
+    "symptom": "loss of appetite"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a scratchy throat for the past two days.",
+    "symptom": "throat pain"
+  },
+  {
+    "sentence": "A 30-year-old individual has been experiencing a lack of motivation for the past few weeks, making it difficult to focus on work tasks.",
+    "symptom": "lack of motivation"
+  },
+  {
+    "sentence": "A 25-year-old woman has been experiencing persistent feelings of worry and fear in social situations for the past six months, indicating symptoms of social anxiety.",
+    "symptom": "anxiety"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing unexplained weight gain, fatigue, and hair loss, which are common symptoms of a thyroid disorder.",
+    "symptom": "thyroid"
+  },
+  {
+    "sentence": "The 35-year-old man has been experiencing a persistent and grating cough for the past two weeks.",
+    "symptom": "cough"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent skin burning sensation on her arms for the past week.",
+    "symptom": "skin burning"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing persistent weakness in his muscles for the past two weeks.",
+    "symptom": "weakness"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing itchy and watery eyes, along with sneezing and a runny nose, for the past week.",
+    "symptom": "allergy"
+  },
+  {
+    "sentence": "The elderly woman complained of persistent joint pain in her knees for the past two months, making it difficult for her to walk.",
+    "symptom": "joint pain"
+  },
+  {
+    "sentence": "A 42-year-old patient has been experiencing constant toothache for the past week.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent bloating for the past week, accompanied by abdominal discomfort and gas.",
+    "symptom": "bloating"
+  },
+  {
+    "sentence": "A 35-year-old man has been experiencing a runny nose for the past week, along with watery eyes and occasional sneezing.",
+    "symptom": "runny nose"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing fatigue, increased thirst, and frequent urination for the past few months, which could be signs of insulin resistance.",
+    "symptom": "diabetes"
+  },
+  {
+    "sentence": "The 35-year-old woman has been experiencing severe tooth pain for the past week, making it difficult for her to eat or drink.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 65-year-old woman has been experiencing difficulty swallowing for the past week.",
+    "symptom": "difficulty swallowing"
+  },
+  {
+    "sentence": "A 35-year-old patient has been experiencing difficulty maintaining focus for the past few weeks.",
+    "symptom": "difficulty concentrating"
+  },
+  {
+    "sentence": "The 7-year-old child has been experiencing unsettledness and restlessness for the past week, often having trouble staying still or focusing on tasks.",
+    "symptom": "restlessness"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing sharp tooth pain in his lower left molar for the past week.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 5-year-old child has been experiencing a runny nose for the past two days.",
+    "symptom": "runny nose"
+  },
+  {
+    "sentence": "The 65-year-old woman experienced a sudden episode of fainting that lasted for a few seconds.",
+    "symptom": "fainting"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing difficulty achieving her weight loss goals despite following a strict diet and exercise regimen for the past 6 months.",
+    "symptom": "weight loss"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent itching all over her body for the past two weeks.",
+    "symptom": "itching"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing wheezing and shortness of breath for the past week.",
+    "symptom": "asthma"
+  },
+  {
+    "sentence": "The 8-year-old child has been experiencing restlessness for the past week, often having trouble sitting still or concentrating on tasks.",
+    "symptom": "restlessness"
+  },
+  {
+    "sentence": "The 30-year-old man experienced severe dehydration after hiking in the desert for three days.",
+    "symptom": "dehydration"
+  },
+  {
+    "sentence": "The 35-year-old patient has been experiencing persistent jaw ache on the right side for the past week.",
+    "symptom": "jaw pain"
+  },
+  {
+    "sentence": "A 45-year-old man presented to the emergency room with sudden onset severe abdominal pain and signs of hemorrhage, including pale skin and low blood pressure.",
+    "symptom": "bleeding"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing an exhausted feeling for the past two weeks, along with difficulty concentrating and lack of motivation.",
+    "symptom": "exhaustion"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing pain in the temporomandibular joint for the past two weeks, making it difficult for her to chew and speak.",
+    "symptom": "jaw pain"
+  },
+  {
+    "sentence": "The 45-year-old man complained of persistent tinnitus in his left ear for the past two weeks.",
+    "symptom": "ear ringing"
+  },
+  {
+    "sentence": "A 35-year-old athlete recently experienced an injury while playing basketball, resulting in sharp pain in their ankle.",
+    "symptom": "injury"
+  },
+  {
+    "sentence": "A 25-year-old patient has been experiencing sharp jaw pain for the past week due to impacted wisdom teeth.",
+    "symptom": "jaw pain"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing persistent leg pain for the past two weeks.",
+    "symptom": "leg pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing tooth pain after eating for the past week.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing poor concentration for the past few weeks.",
+    "symptom": "difficulty concentrating"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing irregular menstrual cycles and severe cramps for the past few months.",
+    "symptom": "female issue"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing a burning sensation in his chest after meals for the past month, which is indicative of heartburn.",
+    "symptom": "heartburn"
+  },
+  {
+    "sentence": "A 55-year-old man has been experiencing persistent headaches and vision problems, which could be indicative of cardiovascular hypertension.",
+    "symptom": "high blood pressure"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing excessive thirst for the past two weeks.",
+    "symptom": "excessive thirst"
+  },
+  {
+    "sentence": "The 45-year-old patient has been experiencing extreme exhaustion for the past two weeks, feeling constantly drained and lacking energy.",
+    "symptom": "exhaustion"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing a concerning symptom of noticing blood in his urine for the past week.",
+    "symptom": "blood in urine"
+  },
+  {
+    "sentence": "The 45-year-old patient has been experiencing persistent difficulty falling asleep and staying asleep, indicating symptoms of insomnia.",
+    "symptom": "insomnia"
+  },
+  {
+    "sentence": "The patient, a 45-year-old woman, has been experiencing eye sensitivity for the past week.",
+    "symptom": "eye weakness"
+  },
+  {
+    "sentence": "A 45-year-old woman experienced severe pain and swelling in her leg after a fall, which turned out to be a bone fracture.",
+    "symptom": "bone fracture"
+  },
+  {
+    "sentence": "The 45-year-old man has been experiencing persistent arm pain for the past week, which has been affecting his ability to perform daily tasks.",
+    "symptom": "arm pain"
+  },
+  {
+    "sentence": "A 30-year-old woman has been experiencing symptoms of infection, such as fever, chills, and fatigue, for the past week.",
+    "symptom": "infection"
+  },
+  {
+    "sentence": "A 35-year-old woman experienced severe cramps in her legs during her evening run.",
+    "symptom": "cramp"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing blood in his urine for the past week.",
+    "symptom": "blood in urine"
+  },
+  {
+    "sentence": "Sarah, a 60-year-old woman, has been experiencing persistent joint pain and stiffness in her knees for the past six months.",
+    "symptom": "arthritis"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing swelling in her ankles for the past week.",
+    "symptom": "swelling"
+  },
+  {
+    "sentence": "A 50-year-old woman has been experiencing persistent pain in her back for the past few weeks, indicating a possible back bone issue.",
+    "symptom": "back bone issue"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing unexplained weight gain over the past few months.",
+    "symptom": "weight gain"
+  },
+  {
+    "sentence": "The 45-year-old patient has been experiencing chills and body aches for the past two days.",
+    "symptom": "chills"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a pulsating headache for the past three days.",
+    "symptom": "headache"
+  },
+  {
+    "sentence": "A 45-year-old runner has been experiencing sharp wrist pain for the past week, especially when lifting weights at the gym.",
+    "symptom": "wrist pain"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing symptoms of infection for the past week, including fever, chills, and fatigue.",
+    "symptom": "infection"
+  },
+  {
+    "sentence": "A 10-year-old child has been experiencing a persistent runny nose for the past week.",
+    "symptom": "runny nose"
+  },
+  {
+    "sentence": "The 45-year-old patient has been experiencing nasal congestion for the past week.",
+    "symptom": "congestion"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing persistent rectal irritation for the past two weeks.",
+    "symptom": "piles"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing frequent urination and unexplained weight loss for the past few weeks, which could be indicative of diabetes.",
+    "symptom": "diabetes"
+  },
+  {
+    "sentence": "The 45-year-old patient mentioned that they have been experiencing swelling in their ankles for the past week.",
+    "symptom": "swelling"
+  },
+  {
+    "sentence": "The 45-year-old patient presented with severe hypotension lasting for the past 24 hours, characterized by dizziness upon standing and a rapid heart rate.",
+    "symptom": "low blood pressure"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing numbness in her fingers for the past week.",
+    "symptom": "numbness"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing painful swallowing for the past week.",
+    "symptom": "difficulty swallowing"
+  },
+  {
+    "sentence": "The patient, a 45-year-old female, has been experiencing unexplained bleeding for the past week.",
+    "symptom": "bleeding"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent difficulty falling asleep and staying asleep for the past few weeks.",
+    "symptom": "insomnia"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing fuzzy-headed instability for the past week, which could be a sign of dizziness.",
+    "symptom": "dizziness"
+  },
+  {
+    "sentence": "The 65-year-old patient has been experiencing confusion for the past week.",
+    "symptom": "confusion"
+  },
+  {
+    "sentence": "A 60-year-old patient has been experiencing diabetic complications such as neuropathy and retinopathy for the past 5 years.",
+    "symptom": "diabetes"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing blood in his urine for the past week.",
+    "symptom": "blood in urine"
+  },
+  {
+    "sentence": "The elderly patient has been experiencing dizziness and fatigue for the past two weeks, along with episodes of lightheadedness and blurry vision, indicating possible low blood pressure.",
+    "symptom": "low blood pressure"
+  },
+  {
+    "sentence": "A 45-year-old man has been experiencing excessive thirst and frequent urination for the past week.",
+    "symptom": "excessive thirst"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing persistent pain and discomfort in her back for the past few weeks, indicating a possible back bone issue.",
+    "symptom": "back bone issue"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing significant hair loss for the past six months.",
+    "symptom": "hair loss"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing heat radiating under her skin for the past two days.",
+    "symptom": "fever"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing frequent mood swings for the past month.",
+    "symptom": "mood swing"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing ear secretion for the past week, accompanied by a foul smell and mild discomfort.",
+    "symptom": "ear discharge"
+  },
+  {
+    "sentence": "The 45-year-old man has been experiencing persistent upper limb pain for the past two weeks.",
+    "symptom": "arm pain"
+  },
+  {
+    "sentence": "A 45-year-old woman has been experiencing frequent episodes of acid indigestion after meals for the past two weeks.",
+    "symptom": "heartburn"
+  },
+  {
+    "sentence": "A 10-year-old child has been experiencing frequent vomiting episodes for the past two days.",
+    "symptom": "vomiting"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing a slick and slippery feeling on her skin for the past few days.",
+    "symptom": "sweat"
+  },
+  {
+    "sentence": "The elderly woman, aged 78, has been experiencing dizziness, fatigue, and occasional fainting spells for the past two weeks, which are all indicative of low blood pressure.",
+    "symptom": "low blood pressure"
+  },
+  {
+    "sentence": "A 7-year-old child has been experiencing persistent discharge from the ear canal for the past week.",
+    "symptom": "ear discharge"
+  },
+  {
+    "sentence": "A 35-year-old woman has been experiencing sharp tooth pain in her lower left molar for the past week.",
+    "symptom": "tooth pain"
+  },
+  {
+    "sentence": "A 50-year-old man has been experiencing severe pain and swelling in his big toe for the past week, which are classic symptoms of gout.",
+    "symptom": "gout"
+  },
+  {
+    "sentence": "A 30-year-old woman has been experiencing itchy eyes and sneezing for the past week, which she suspects might be due to an allergy.",
+    "symptom": "allergy"
+  },
+  {
+    "sentence": "The 35-year-old patient has been experiencing sharp foot pain in their left foot for the past week, especially when walking or standing for long periods.",
+    "symptom": "foot pain"
+  }
+]
