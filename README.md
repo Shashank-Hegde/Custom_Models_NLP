@@ -134,4 +134,43 @@ Each approach relies on custom training data generated intuitively by GPT‑3.5.
 
 ---
 
+## 3. FAISS-based SBERT Extraction Pipeline
+Overview:
+---------
+This pipeline extracts clinical entities (e.g., symptoms, medications, locations) from input text using dense embeddings and fast nearest‐neighbor search with FAISS. The system consists of two main modules:
+
+### Candidate Index Construction:
+   - Fixed lists (e.g., symptom_list, symptom_synonyms, medications_list, location_list) are combined to form a candidate dictionary where each candidate entry includes:
+       • text: the candidate phrase
+       • type: the entity type (e.g., "SYMPTOM")
+       • canonical: the canonical label (for synonyms)
+   - Each candidate phrase is encoded with a SentenceTransformer (e.g., "all-MiniLM-L6-v2"). Embeddings are L2-normalized.
+   - A FAISS index (using IndexFlatIP) is built using these normalized embeddings for fast cosine similarity search.
+
+### Inference:
+   - The input text is split into sentences (using NLTK’s sent_tokenize).
+   - For each sentence, candidate spans are extracted using spaCy’s noun chunk extraction (reducing the number of candidate spans vs. full sliding windows).
+   - Each candidate span is encoded via SBERT and normalized.
+   - The FAISS index is queried for the nearest candidate. If the best similarity (cosine score) exceeds a predefined threshold, the system returns that candidate’s canonical label.
+   - Only the best matching candidate per sentence is output to reduce noise.
+
+Key Technical Details:
+-----------------------
+• **Candidate Dictionary:** Built from a fixed set of phrases and their synonyms; each candidate includes text, type, and canonical label.
+• **SBERT Embeddings:** Dense representations are computed for both candidate phrases and extracted noun chunks.
+• **FAISS Index:** Utilizes IndexFlatIP on normalized embeddings to enable efficient cosine-similarity search.
+• **Candidate Span Extraction:** Uses spaCy to extract noun chunks, focusing on likely entity spans without exhaustive sliding windows.
+• **Thresholding:** A similarity threshold (e.g., 0.65) is applied to filter out poor matches.
+• **Performance:** FAISS enables sub-2-second inference on typical inputs.
+
+Usage:
+------
+### **Candidate Index Build:**  
+   Run `faiss_index_build.py` to encode fixed candidate phrases and build/save the FAISS index (outputs: `candidates.json` and `faiss_index.index`).
+
+### **Inference:**  
+   Run `inference_faiss.py` to split input text into sentences, extract noun-chunk candidates, and retrieve the best matching candidate from the FAISS index if the cosine similarity is above the threshold.
+
+This approach leverages the semantic capabilities of SBERT combined with FAISS indexing to provide a fast and accurate clinical entity extraction solution.
+
 This README provides an in‑depth technical overview and usage instructions for our approaches to symptom and additional data extraction. Please refer to the individual code files for implementation details.
