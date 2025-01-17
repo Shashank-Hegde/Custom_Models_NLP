@@ -1,0 +1,182 @@
+[
+  {
+    "text": "cough",
+    "type": "SYMPTOM",
+    "canonical": "cough"
+  },
+  {
+    "text": "dry cough",
+    "type": "SYMPTOM",
+    "canonical": "cough"
+  },
+  {
+    "text": "productive cough",
+    "type": "SYMPTOM",
+    "canonical": "cough"
+  },
+  {
+    "text": "fever",
+    "type": "SYMPTOM",
+    "canonical": "fever"
+  },
+  {
+    "text": "high temperature",
+    "type": "SYMPTOM",
+    "canonical": "fever"
+  },
+  {
+    "text": "pyrexia",
+    "type": "SYMPTOM",
+    "canonical": "fever"
+  },
+  {
+    "text": "headache",
+    "type": "SYMPTOM",
+    "canonical": "headache"
+  },
+  {
+    "text": "head pain",
+    "type": "SYMPTOM",
+    "canonical": "headache"
+  },
+  {
+    "text": "migraine",
+    "type": "SYMPTOM",
+    "canonical": "headache"
+  },
+  {
+    "text": "fatigue",
+    "type": "SYMPTOM",
+    "canonical": "fatigue"
+  },
+  {
+    "text": "sore throat",
+    "type": "SYMPTOM",
+    "canonical": "sore throat"
+  },
+  {
+    "text": "chills",
+    "type": "SYMPTOM",
+    "canonical": "chills"
+  },
+  {
+    "text": "shortness of breath",
+    "type": "SYMPTOM",
+    "canonical": "shortness of breath"
+  },
+  {
+    "text": "nausea",
+    "type": "SYMPTOM",
+    "canonical": "nausea"
+  },
+  {
+    "text": "queasiness",
+    "type": "SYMPTOM",
+    "canonical": "nausea"
+  },
+  {
+    "text": "sickness",
+    "type": "SYMPTOM",
+    "canonical": "nausea"
+  },
+  {
+    "text": "vomiting",
+    "type": "SYMPTOM",
+    "canonical": "vomiting"
+  },
+  {
+    "text": "diarrhea",
+    "type": "SYMPTOM",
+    "canonical": "diarrhea"
+  },
+  {
+    "text": "rash",
+    "type": "SYMPTOM",
+    "canonical": "rash"
+  },
+  {
+    "text": "dizziness",
+    "type": "SYMPTOM",
+    "canonical": "dizziness"
+  },
+  {
+    "text": "lightheadedness",
+    "type": "SYMPTOM",
+    "canonical": "dizziness"
+  },
+  {
+    "text": "vertigo",
+    "type": "SYMPTOM",
+    "canonical": "dizziness"
+  },
+  {
+    "text": "back spasm",
+    "type": "SYMPTOM",
+    "canonical": "back spasm"
+  },
+  {
+    "text": "back is spasming",
+    "type": "SYMPTOM",
+    "canonical": "back spasm"
+  },
+  {
+    "text": "spinal contraction",
+    "type": "SYMPTOM",
+    "canonical": "back spasm"
+  },
+  {
+    "text": "back muscle tension",
+    "type": "SYMPTOM",
+    "canonical": "back spasm"
+  },
+  {
+    "text": "ibuprofen",
+    "type": "MEDICATION",
+    "canonical": "ibuprofen"
+  },
+  {
+    "text": "acetaminophen",
+    "type": "MEDICATION",
+    "canonical": "acetaminophen"
+  },
+  {
+    "text": "paracetamol",
+    "type": "MEDICATION",
+    "canonical": "paracetamol"
+  },
+  {
+    "text": "aspirin",
+    "type": "MEDICATION",
+    "canonical": "aspirin"
+  },
+  {
+    "text": "naproxen",
+    "type": "MEDICATION",
+    "canonical": "naproxen"
+  },
+  {
+    "text": "Mumbai",
+    "type": "LOCATION",
+    "canonical": "Mumbai"
+  },
+  {
+    "text": "Delhi",
+    "type": "LOCATION",
+    "canonical": "Delhi"
+  },
+  {
+    "text": "Bangalore",
+    "type": "LOCATION",
+    "canonical": "Bangalore"
+  },
+  {
+    "text": "Hyderabad",
+    "type": "LOCATION",
+    "canonical": "Hyderabad"
+  },
+  {
+    "text": "Kolkata",
+    "type": "LOCATION",
+    "canonical": "Kolkata"
+  }
+]

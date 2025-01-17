@@ -1,104 +1,132 @@
 #!/usr/bin/env python3
-"""
-inference_faiss_sliding.py
-
-This script performs inference using a FAISS index built from candidate phrases.
-It uses spaCy to extract noun chunks (candidate spans) from each sentence,
-encodes these spans using SBERT, and then performs a fast FAISS search for the best match.
-It returns one best matching candidate per sentence if its similarity exceeds the threshold.
-
-Before running, ensure:
-    pip install faiss-cpu numpy sentence-transformers spacy nltk
-"""
-
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
 import spacy
-from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.tokenize import sent_tokenize
 import json
 import nltk
+import re
+import time
+
+# Download necessary nltk data
 nltk.download('punkt', quiet=True)
 
-#######################################
-# 1. Load Candidate Dictionary and FAISS Index
-#######################################
-with open("candidates.json", "r", encoding="utf8") as f:
-    candidates = json.load(f)
-faiss_index = faiss.read_index("faiss_index.index")
-print(f"Loaded FAISS index with {faiss_index.ntotal} candidates.")
+################################################
+# Global Cache: Load Models and FAISS Index Once
+################################################
+
+def load_resources():
+    """
+    Load the SBERT model, spaCy model, candidate dictionary, and FAISS index,
+    and return them as a tuple.
+    """
+    start_time = time.time()
+    # Load candidate dictionary from file
+    with open("candidates.json", "r", encoding="utf8") as f:
+        candidates = json.load(f)
+    # Load FAISS index from file
+    index = faiss.read_index("faiss_index.index")
+    print(f"Loaded FAISS index with {index.ntotal} candidates.")
+
+    # Load SBERT model (fine-tuned or default)
+    sbert_model = SentenceTransformer("all-MiniLM-L6-v2")
+    print("Loaded SBERT model.")
+
+    # Load spaCy model for noun-chunk extraction
+    nlp_spacy = spacy.load("en_core_web_sm")
+    print("Loaded spaCy model.")
+
+    total_time = time.time() - start_time
+    print(f"All resources loaded in {total_time:.2f} seconds.")
+    return sbert_model, nlp_spacy, candidates, index
+
+# Global variables to avoid re-loading on every inference.
+SBERT_MODEL, NLP_SPACY, CANDIDATES, FAISS_INDEX = load_resources()
 
 #######################################
-# 2. Load Models
+# Candidate Span Extraction via Noun Chunks
 #######################################
-# Load SBERT model (use your fine-tuned model if available)
-sbert_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Load a lightweight spaCy model for noun chunk extraction
-nlp_spacy = spacy.load("en_core_web_sm")
-
-#######################################
-# 3. Candidate Span Extraction using Noun Chunks
-#######################################
 def extract_candidate_spans(sentence):
     """
-    Use spaCy to extract noun chunks from a sentence as candidate spans.
+    Extract candidate spans from a sentence using spaCy's noun chunks.
+    Returns a list of candidate phrases.
     """
-    doc = nlp_spacy(sentence)
-    spans = []
-    for chunk in doc.noun_chunks:
-        text = chunk.text.strip()
-        if len(text) >= 3:
-            spans.append(text)
+    doc = NLP_SPACY(sentence)
+    spans = [chunk.text.strip() for chunk in doc.noun_chunks if len(chunk.text.strip()) >= 3]
     return spans
 
 #######################################
-# 4. Inference Function
+# Negation Filtering (Optional)
 #######################################
-def infer_symptoms(text, threshold=0.6):
+
+NEGATION_PATTERNS = [
+    r'\bno\b', r'\bnot\b', r'\bnever\b', r'\bwithout\b'
+]
+
+def has_negation_context(sentence, candidate):
     """
-    Given an input text, perform the following:
-      1. Split the text into sentences.
-      2. For each sentence, extract candidate spans using noun chunks.
-      3. Encode each candidate span with SBERT.
-      4. Query the FAISS index for the best matching candidate.
-      5. Return, for each sentence, the best matching candidate with its canonical label if the similarity
-         is above threshold; otherwise, indicate no match.
+    Check if a candidate phrase in a sentence is preceded or followed by a negation term.
+    """
+    sentence_lower = sentence.lower()
+    candidate_lower = candidate.lower()
+    for pattern in NEGATION_PATTERNS:
+        if re.search(pattern + r".{0,15}" + re.escape(candidate_lower), sentence_lower):
+            return True
+        if re.search(re.escape(candidate_lower) + r".{0,15}" + pattern, sentence_lower):
+            return True
+    return False
+
+#######################################
+# Inference Function
+#######################################
+
+def infer_entities(text, threshold=0.65):
+    """
+    For the input text:
+      - Split text into sentences.
+      - For each sentence, extract candidate spans using noun chunk extraction.
+      - Encode these candidates with SBERT.
+      - Query the FAISS index for the best matching candidate.
+      - Return only the best match (if similarity exceeds the threshold).
     """
     results = []
     sentences = sent_tokenize(text)
 
+    # Process each sentence
     for sentence in sentences:
-        candidate_spans = extract_candidate_spans(sentence)
-        if not candidate_spans:
+        candidates_in_sentence = extract_candidate_spans(sentence)
+        if not candidates_in_sentence:
             results.append({"sentence": sentence, "match": None})
             continue
 
-        # Encode candidate spans
-        span_embeddings = sbert_model.encode(candidate_spans, convert_to_numpy=True)
+        # Encode candidate spans using the already-loaded SBERT_MODEL
+        span_embeddings = SBERT_MODEL.encode(candidates_in_sentence, convert_to_numpy=True)
         faiss.normalize_L2(span_embeddings)
 
-        # Track best candidate for the sentence
+        best_candidate = None
         best_score = -1.0
-        best_match = None
         best_span = None
 
-        for span, emb in zip(candidate_spans, span_embeddings):
+        for candidate_span, emb in zip(candidates_in_sentence, span_embeddings):
             emb = np.expand_dims(emb, axis=0)
-            D, I = faiss_index.search(emb, k=1)
+            D, I = FAISS_INDEX.search(emb, k=1)
             score = D[0][0]
             if score > best_score:
+                if has_negation_context(sentence, candidate_span):
+                    continue
                 best_score = score
-                best_span = span
-                best_match = candidates[I[0][0]]
+                best_span = candidate_span
+                best_candidate = CANDIDATES[I[0][0]]
 
-        if best_score >= threshold:
+        if best_score >= threshold and best_candidate is not None:
             results.append({
                 "sentence": sentence,
                 "matched_span": best_span,
-                "matched_type": best_match["type"],
-                "matched_candidate": best_match["text"],
-                "canonical": best_match.get("canonical", ""),
+                "matched_type": best_candidate["type"],
+                "matched_candidate": best_candidate["text"],
+                "canonical": best_candidate.get("canonical", ""),
                 "similarity": float(best_score)
             })
         else:
@@ -106,20 +134,24 @@ def infer_symptoms(text, threshold=0.6):
     return results
 
 #######################################
-# 5. Main: Example Inference
+# Main Execution
 #######################################
+
 if __name__ == "__main__":
     sample_text = (
         "I have been suffering from a high temperature and a severe headache since yesterday. "
         "My doctor recommended ibuprofen and I also have a dry cough."
     )
 
-    results = infer_symptoms(sample_text, threshold=0.6)
+    start = time.time()
+    results = infer_entities(sample_text, threshold=0.65)
+    end = time.time()
+
     print("Input Text:")
     print(sample_text)
     print("\nExtracted Best Matches (per sentence):")
     for res in results:
-        print("Sentence:", res["sentence"])
+        print("Sentence: {}".format(res["sentence"]))
         if res.get("matched_candidate"):
             print("  Best Match: {} (Canonical: {}) | Type: {} | Similarity: {:.2f}".format(
                 res["matched_candidate"], res["canonical"], res["matched_type"], res["similarity"]
@@ -127,3 +159,5 @@ if __name__ == "__main__":
         else:
             print("  No match above threshold.")
         print("-----")
+
+    print(f"Total inference time: {end - start:.2f} seconds.")
