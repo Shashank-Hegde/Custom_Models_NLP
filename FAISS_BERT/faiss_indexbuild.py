@@ -29,7 +29,7 @@ symptom_list = [
 'gas', 'indigestion', 'heartburn', 'mouth sore', 'nosebleed', 'ear ringing', 'dark urine', 'blood in urine', 'blood in stool', 'high blood pressure',
 'low blood pressure', 'excessive thirst', 'dehydration', 'skin burning', 'sweat', 'eye pain',  'eye discharge', 'ear discharge', 'jaundice',
 'hearing loss', 'balance problem', 'irregular heartbeat', 'fainting', 'tremor', 'nervousness', 'panic attack', 'mood swing', 'difficulty concentrating',
-'hallucination', 'lack of motivation', 'exhaustion', 'bone pain', 'wrist pain', 'sprain', 'strain', 'arthritis', 'gout', 'headache', 'injury', 'chills',
+'hallucination', 'lack of motivation', 'exhaustion', 'bone pain', 'wrist pain', 'sprain', 'strain', 'arthritis', 'gout', 'headache', 'injury', 'chills','mouth pain'
 'leg pain', 'hand pain', 'arm pain', 'foot pain', 'knee pain', 'shoulder pain', 'hip pain', 'jaw pain', 'tooth pain','sleepy', 'bone fracture','sleepy','back bone issue',
 'female issue', 'thyroid', 'piles', 'asthma','pneumonia','sugar',
 # weakness symtom
@@ -113,7 +113,8 @@ symptom_synonyms = {
         'pain from gas buildup', 'pressure in the stomach', 'pain from constipation', 'distended abdomen', 'pain from ulcers', 'pain from bloating', 'pain from food intolerance',
         'sore stomach', 'pain from intestinal issues', 'gastrointestinal pain', 'tenderness in the stomach', 'pain near the navel', 'pain from diarrhea', 'stomach flu pain', 'pain in the lower abdomen',
         'feeling of fullness with pain', 'pain in the upper abdomen', 'stomach cramping', 'sharp abdominal cramps', 'nausea with stomach pain', 'abdominal swelling with pain', 'abdominal pain',
-        'chronic stomach pain', 'pain with digestive issues', 'pain from food poisoning', 'pain from gallbladder issues', 'pain from acid reflux'
+        'chronic stomach pain', 'pain with digestive issues', 'pain from food poisoning', 'pain from gallbladder issues', 'pain from acid reflux', 'pain in stomach', 'burning in stomach', 'itching in stomach', 'numbness in stomach',
+        'stomach discomfort', 'ache in stomach', 'trouble in stomach', 'stomach cramp', 'sharp pain in stomach', 'pain in the stomach', 'stomach is paining', 'stomach is burning','stomach is aching'
     ],
     'weakness': [
         'tiredness', 'extreme tiredness','weariness', 'fatigued feeling', 'lack of energy', 'physical depletion', 'mental fatigue', 'chronic tiredness',
@@ -306,7 +307,9 @@ symptom_synonyms = {
         'sharp eye ache', 'vision-related pain', 'severe eye pain', 'sharp stabbing pain in the eye', 'pain in the eyeball', 'tired eye pain', 'swollen eye discomfort', 'throbbing behind the eyes',
         'pain from light sensitivity', 'pain after reading', 'pain when blinking', 'gritty feeling in the eyes', 'intense eye pressure', 'pain around the eyelids', 'blurry vision with pain', 'puffy eyes with pain',
         'pain near the cornea', 'stinging pain in the eye', 'pain with redness in the eye', 'ocular discomfort', 'persistent eye pain', 'painful feeling when moving eyes', 'pressure sensation in the eyes',
-        'pain from eye strain', 'pain with dry eyes', 'eye irritation', 'eye swelling', 'eye tearing',
+        'pain from eye strain', 'pain with dry eyes', 'eye irritation', 'eye swelling', 'eye tearing','pain in eye','pain in the eyes', 'itching in eye', 'itching in eyes', 'burning in eye', 'burning in eyes',
+        'sore eye', 'sore eyes', 'numbness in eye', 'numbness in eyes', 'eye discomfort', 'ache in eye', 'ache in eyes',
+        'trouble in eye', 'trouble in eyes','pain in my eye','pain in eyes', 'pain in my eyes'
     ],
     'ear pain': [
         'ear ache', 'pain in the ear', 'ear discomfort', 'sharp ear pain', 'throbbing ear ache', 'ear irritation', 'pressure in the ear', 'sharp pain in the ear', 'stabbing ear pain',
@@ -330,7 +333,8 @@ symptom_synonyms = {
         'pain from acid reflux', 'hoarse throat', 'tight throat pain', 'painful voice box', 'pain in the larynx', 'pain with coughing', 'pain with dry mouth', 'pain with difficulty swallowing',
         'pain in the pharynx', 'pain with swollen glands', 'throat congestion', 'pain after excessive talking', 'pain from dry air', 'pain from smoking', 'throat dryness', 'severe throat discomfort',
         'pain after eating', 'pain from post-nasal drip', 'sore and swollen throat', 'pain from throat infection', 'swollen tonsils with pain', 'tightness in the throat', 'pain from sore mouth',
-        'stabbing throat pain', 'pain when swallowing food', 'burning throat pain'
+        'stabbing throat pain', 'pain when swallowing food', 'burning throat pain', 'pain in throat', 'burning in throat', 'itching in throat', 'sore throat', 'numbness in throat',
+        'throat discomfort', 'ache in throat', 'trouble in throat', 'throat irritation','throat is paining'
     ],
     'jaw pain': [
         'pain in the jaw', 'jaw discomfort', 'jaw ache', 'pain in the temporomandibular joint', 'TMJ pain', 'painful jaw muscles', 'pain from jaw clenching', 'tooth-related jaw pain',
@@ -362,7 +366,9 @@ symptom_synonyms = {
         'pain from knee injury', 'pain from knee strain', 'knee swelling', 'pain when bending knee', 'pain while walking', 'pain after exercise', 'pain from knee overuse', 'pain with knee movement',
         'pain in the kneecap', 'pain on the outer knee', 'pain on the inner knee', 'pain from ligament injury', 'pain from torn meniscus', 'sharp pain in the knee cap',
         'knee joint inflammation', 'pain when climbing stairs', 'pain with swelling', 'pain from running', 'pain from twisting knee', 'pain when standing up', 'knee tenderness', 'pain from patella dislocation',
-        'pain with knee instability', 'pain from bursitis', 'pain with osteoarthritis', 'pain from cartilage damage', 'pain after knee surgery', 'pain in the back of the knee'
+        'pain with knee instability', 'pain from bursitis', 'pain with osteoarthritis', 'pain from cartilage damage', 'pain after knee surgery', 'pain in the back of the knee', 'numbness in knee', 'numbness in knees', 'itching in knee', 'itching in knees',
+        'knee discomfort', 'ache in knees', 'sore knee', 'sore knees', 'knee burning', 'burning sensation in knee',
+        'tingling in knees', 'trouble in knee', 'trouble in knees'
     ],
     'foot pain': [
         'pain in the foot', 'plantar pain', 'foot discomfort', 'foot ache', 'pain in the heel', 'sharp foot pain', 'throbbing foot pain', 'pain from foot injury', 'pain in the arch',
@@ -392,7 +398,10 @@ symptom_synonyms = {
         'pain from repetitive motions', 'pain from carpal tunnel syndrome', 'pain from hand overuse', 'hand joint pain', 'pain from hand sprain', 'pain from tendonitis in the hand', 'pain in the wrist with hand use',
         'sharp pain when holding objects', 'burning pain in the hand', 'painful hand cramps', 'dull hand pain', 'pain from hand fracture', 'pain from swelling in the hand', 'joint stiffness in the hand',
         'pain from typing', 'pain after using the hand excessively', 'pain when stretching the hand', 'pain in hand from trauma', 'pain when writing', 'pain with hand dexterity', 'pain in the hand after exercise',
-        'muscle pain in the hand', 'pain from cold in the hand', 'pain after lifting objects'
+        'muscle pain in the hand', 'pain from cold in the hand', 'pain after lifting objects', 'pain in the palm', 'pain in the wrist', 'hand soreness', 'pain from hand injury',
+        'pain from overuse', 'pain from arthritis', 'pain while gripping', 'hand muscle pain', 'pain with swelling', 'pain in the hands', 'numbness in hand', 'numbness in hands', 'itching in hand', 'itching in hands',
+        'burning in hand', 'burning in hands', 'sore hand', 'sore hands', 'hand discomfort', 'ache in hand', 'ache in hands',
+        'trouble in hand', 'trouble in hands','hands are aching','hand is aching', 'hand is paining', 'hands are paining'
     ],
     'arm pain': [
         'pain in the arm', 'upper limb pain', 'arm discomfort', 'sharp arm pain', 'throbbing arm pain', 'pain in the elbow', 'pain in the shoulder', 'pain in the forearm', 'pain in the biceps',
@@ -400,16 +409,24 @@ symptom_synonyms = {
         'pain from arm sprain', 'pain in the wrist and arm', 'stiffness in the arm', 'swollen arm', 'pain when moving the arm', 'burning pain in the arm', 'aching in the arm', 'arm cramping',
         'pain from lifting with the arm', 'pain when raising the arm', 'pain from overuse of the arm', 'pain from arm fracture', 'pain in the arm muscles after exercise', 'pain from muscle strain in the arm',
         'pain from joint inflammation', 'sharp pain in the arm muscles', 'pain in the elbow joint', 'pain in the shoulder joint', 'dull arm pain', 'pain in the forearm when lifting', 'shooting arm pain',
-        'nerve-like pain in the arm'
+        'nerve-like pain in the arm','pain in the arm', 'pain in the arms'
     ],
     'leg pain': [
-        'pain in the leg', 'lower limb pain', 'leg discomfort', 'muscle pain in the leg', 'pain in the thigh', 'pain in the calf', 'pain in the knee', 'pain in the shin', 'pain from leg injury',
+        'pain in the leg', 'lower limb pain', 'leg discomfort', 'muscle pain in the leg', 'pain in the thigh', 'pain in the calf', 'pain in the shin', 'pain from leg injury',
         'sharp leg pain', 'throbbing leg pain', 'aching leg pain', 'pain in the leg muscles', 'pain in the leg joints', 'pain when walking', 'pain from leg cramps', 'pain after leg exercise',
         'pain after running', 'pain from overuse', 'pain in the hamstring', 'pain from leg sprain', 'muscle soreness in the leg', 'pain in the calf after activity', 'pain from leg fractures',
         'burning pain in the leg', 'pain from restless legs', 'pain when standing', 'pain in the thigh after sitting', 'pain in the foot and leg', 'pain with leg movement', 'pain from sciatica',
         'leg pain from sitting too long', 'pain when bending the leg', 'pain in the shin muscles', 'swollen leg', 'pain from arthritis in the leg', 'dull pain in the leg', 'sharp pain in the lower leg',
-        'pain when walking on uneven ground', 'pain in the lower back and leg'
+        'pain when walking on uneven ground', 'pain in the lower back and leg', 'pain in the legs', 'pain in leg', 'pain in legs', 'numbness in leg', 'numbness in legs', 'itching in leg', 'itching in legs',
+        'burning in leg', 'burning in legs', 'sore leg', 'sore legs', 'leg discomfort', 'ache in leg', 'ache in legs',
+        'trouble in leg', 'trouble in legs', 'leg cramp', 'sharp pain in leg'
     ],
+
+    'mouth pain': [
+        'pain in mouth', 'numbness in mouth', 'itching in mouth', 'burning in mouth', 'soreness in mouth',
+        'discomfort in mouth', 'mouth ache', 'trouble in mouth'
+    ],
+
     'confusion': [
         'disorientation', 'muddled thinking', 'mental fog', 'trouble thinking clearly', 'brain fog', 'cognitive cloudiness', 'puzzled state', 'jumbled thoughts', 'incoherent reasoning', 'tangled mental process',
         'unclear comprehension', 'befuddled mind', 'scrambled logic', 'perplexed state', 'hazy understanding', 'blurred mental picture', 'fuzzy reasoning', 'perplexity', 'baffled intellect',
@@ -430,7 +447,8 @@ symptom_synonyms = {
         'pain in the back muscles', 'dull back pain', 'throbbing back pain', 'pain when bending over', 'pain when standing', 'pain from sciatica', 'pain from a herniated disc', 'pain from poor posture',
         'pain from back injury', 'sharp pain in the lower back', 'pain from spinal stenosis', 'pain in the upper back', 'pain in the back after lifting', 'pain from overuse of back muscles',
         'chronic back pain', 'pain from spinal degeneration', 'aching back muscles', 'back pain with tingling', 'pain from back strain', 'pain when sitting for too long', 'swollen back muscles',
-        'pain from muscle spasms in the back', 'pain with back movement', 'sharp shooting pain in the back'
+        'pain from muscle spasms in the back', 'pain with back movement', 'sharp shooting pain in the back', 'pain in back', 'numbness in back', 'itching in back', 'burning in back', 'sore back', 'back discomfort',
+        'ache in back', 'trouble in back', 'back stiffness', 'sharp pain in back', 'back tenderness','back is paining', 'back pains', 'pain in back', 'pain in the back'
     ],
     'memory loss': [
         'forgetfulness', 'difficulty recalling', 'poor memory', 'memory lapses', 'amnestic episodes', 'short-term memory issues', 'difficulty remembering recent events', 'blanking out on details',
@@ -1007,48 +1025,67 @@ location_list = [
     "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Kolkata","Jaipur"
 ]
 
-# ----------------------------
-# Build candidate dictionary
-# ----------------------------
+# Define symptom_keywords to look for
+symptom_keywords = ['pain', 'discomfort', 'ache', 'sore', 'burning', 'itching', 'tingling', 'numbness', 'trouble']
+
+body_parts = [
+    'leg','legs', 'eye','eyes', 'hand','hands', 'arm','arms', 'head', 'back', 'chest', 'wrist','wrists', 'throat', 'stomach',
+    'neck', 'knee','knees', 'foot','foots', 'shoulder', 'shoulders', 'ear', 'ears','nail' , 'nails', 'bone','bones', 'joint','joints', 'skin','abdomen',
+    'mouth', 'nose', 'tooth', 'tooths', 'tongue','lip', 'lips', 'cheek','cheeks', 'chin', 'forehead',
+    'elbow', 'elbows','ankle','ankles', 'heel', 'heels', 'toe', 'toes','finger','fingers', 'thumb', 'thumbs', 'palm','palms', 'soles',
+    'fingertip', 'fingertips', 'instep', 'calf', 'shin','lumbar', 'thoracic', 'cervical', 'gastrointestinal', 'abdominal', 'rectal', 'genital',
+    'urinary', 'respiratory', 'cardiac', 'pulmonary', 'digestive', 'cranial', 'facial',
+    'ocular', 'otologic', 'nasal', 'oral', 'buccal', 'lingual', 'pharyngeal', 'laryngeal',
+    'trigeminal', 'spinal', 'peripheral', 'visceral', 'biliary', 'renal', 'hepatic'
+]
+
+body_parts = list(set(body_parts))  # Ensure uniqueness
+
 candidates = []
 
-# For symptoms: add canonical + synonyms.
-for sym in symptom_list:
-    candidates.append({"text": sym, "type": "SYMPTOM", "canonical": sym})
-    if sym in symptom_synonyms:
-        for syn in symptom_synonyms[sym]:
-            candidates.append({"text": syn, "type": "SYMPTOM", "canonical": sym})
+# Add symptoms from the symptom list
+for symptom in symptom_list:
+    candidates.append({"text": symptom, "type": "SYMPTOM", "canonical": symptom})
 
-# Add medications.
-for med in medications_list:
-    candidates.append({"text": med, "type": "MEDICATION", "canonical": med})
+# Add manual symptom synonyms
+for canonical, synonyms in symptom_synonyms.items():
+    for synonym in synonyms:
+        candidates.append({"text": synonym, "type": "SYMPTOM", "canonical": canonical})
 
-# Add locations.
-for loc in location_list:
-    candidates.append({"text": loc, "type": "LOCATION", "canonical": loc})
+# Generate combinations of body parts and symptom keywords
+for body_part in body_parts:
+    for keyword in symptom_keywords:
+        # Singular and plural combinations
+        candidates.append({
+            "text": f"{body_part} {keyword}",
+            "type": "SYMPTOM",
+            "canonical": f"{body_part} pain" if keyword in ['pain', 'ache'] else f"{body_part} {keyword}"
+        })
 
 # ----------------------------
-# Load SBERT model and encode candidate texts
+# Encode Candidates with SBERT
 # ----------------------------
-model = SentenceTransformer("all-MiniLM-L6-v2")  # Replace with your custom model if available.
+model = SentenceTransformer("all-MiniLM-L6-v2")
 candidate_texts = [cand["text"] for cand in candidates]
 print(f"Encoding {len(candidate_texts)} candidate phrases...")
 embeddings = model.encode(candidate_texts, convert_to_numpy=True)
+
 # Normalize embeddings for cosine similarity
 faiss.normalize_L2(embeddings)
 
 # ----------------------------
-# Build FAISS index
+# Build FAISS Index
 # ----------------------------
 embedding_dim = embeddings.shape[1]
-index = faiss.IndexFlatIP(embedding_dim)  # Inner product of normalized vectors equals cosine similarity.
+index = faiss.IndexFlatIP(embedding_dim)
 index.add(embeddings)
 print(f"FAISS index built with {index.ntotal} candidates.")
-faiss.write_index(index, "faiss_index.index")
 
 # ----------------------------
-# Save candidates dictionary
+# Save Index and Candidates
 # ----------------------------
+faiss.write_index(index, "faiss_index.index")
 with open("candidates.json", "w", encoding="utf8") as f:
     json.dump(candidates, f, indent=2)
-print("Candidates saved to candidates.json")
+
+print("Index and candidates saved successfully.")
